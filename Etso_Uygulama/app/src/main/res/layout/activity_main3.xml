@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d"
+    tools:context=".Main3Activity">
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#2d2d2d"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2d2d2d">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2d2d2d"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue">
+
+                    <Button
+                        android:id="@+id/haberler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/hbrlr" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/brown">
+
+                    <Button
+                        android:id="@+id/odamız"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/oda_birimleri" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/crimson">
+
+                    <Button
+                        android:id="@+id/oda_organları"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/odada" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2d2d2d">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2d2d2d"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/magenta">
+
+                    <Button
+                        android:id="@+id/oda_birimleri"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/odamizz" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/springgreen">
+
+                    <Button
+                        android:id="@+id/oda_yayınları"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/oda_yayin" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/DarkOrange">
+
+                    <Button
+                        android:id="@+id/hizmetler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/yenihzmt" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/fragment_navigation_drawer_layout">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

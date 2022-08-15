@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2d2d"
+
+    tools:context="com.example.hp.etso_uygulama.Splash">
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/daa"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+
+    <TextView
+
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
